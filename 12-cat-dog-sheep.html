@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cat Dog Sheep</title>
+    <link rel="stylesheet" href="styles/12-cat-dog-sheep.css">
+</head>
+<body>
+  <p class="title">Cat Dog Sheep</p>
+
+  <button  
+  class="move-button js-cat-button"><img src="images/cat-emoji.png" class="move-icon">Cat</button>
+
+  <button     
+   class="move-button js-dog-button"><img src="images/dog-emoji.png" class="move-icon">Dog</button>
+
+
+  <button  
+   class="move-button js-sheep-button"><img src="images/sheep-emoji.png" class="move-icon">Sheep</button>
+
+  <p class="js-result result"></p>
+  <p class="js-move">
+  </p>
+  <P class="js-score score"></P>
+
+  <button onclick="
+  score.wins = 0;
+  score.losses = 0;
+  score.ties = 0;
+  localStorage.removeItem('score');
+  updateScoreElement();
+  " class="reset-score-button">Reset Score</button>
+
+  <button class="auto-play-button" onclick="
+    autoPlay();
+  ">Auto Play</button>
+  
+   
+  
+  <script src="scripts/12-cat-dog-sheep.js"
+  ></script>
+
+</body>
+</html>
